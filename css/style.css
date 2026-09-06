@@ -1,0 +1,156 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #eee8df;
+  color: #24211e;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+.todo-container {
+  width: 100%;
+  max-width: 560px;
+  padding: 40px;
+  background: #fffdf9;
+  border: 1px solid #cbc2b6;
+  border-radius: 16px;
+  box-shadow: 0 18px 45px rgba(50, 40, 30, 0.12); 
+}
+
+
+.task-entry {
+  display: flex;
+  gap: 10px;
+  margin: 28px 0; 
+}
+
+
+#taskList {
+  padding: 0;
+  list-style: none;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+.eyebrow {
+  margin-bottom: 7px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 11px;
+  font-weight: bold;
+  color: #756251;
+}
+
+
+h1 {
+  margin: 0 0 8px;
+  font-size: 40px; 
+}
+
+
+.intro {
+  margin-top: 0;
+  color: #6e675f; 
+}
+
+
+input {
+  flex: 1;
+  padding: 13px;
+  border: 1px solid #cfc7bd;
+  border-radius: 7px;
+  font-size: 16px; 
+}
+
+
+button {
+  padding: 11px 15px;
+  border: none;
+  border-radius: 7px;
+  background: #34302b;
+  color: white;
+  cursor: pointer; 
+}
+
+
+button:hover {
+  opacity: 0.8;
+}
+
+
+li {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+  padding: 12px;
+  border: 1px solid #ddd5cb;
+  border-radius: 8px;
+}
+
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.45;
+}
+
+
+.clear-button {
+  width: 100%;
+  margin-top: 15px;
+  background: #766555;
+}
+
+
+@media screen and (max-width: 500px) {
+
+  .todo-container {
+    padding: 30px 20px;
+  }
+
+
+  .task-entry {
+    display: grid;
+  }
+
+
+  li {
+    grid-template-columns: 1fr;
+  }
+
+}
