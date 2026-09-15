@@ -1,22 +1,23 @@
-# ✅ Week05 Bootcamp2019 Project: Todo List
+# Things To Do: Productivity Tracker
 
-### Goal: Build a Simple Todo List
+A browser-based task manager built with HTML, CSS, and JavaScript. Users can add tasks, mark them complete, delete individual items, and clear the full task list.
 
-### How to submit your code for review:
+**Live Site:** [View the project](https://to-do-productivity-tracker.netlify.app)
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
+![Things To Do productivity tracker screenshot](./todo-list-preview.png)
 
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+## How It's Made
+
+**Tech used:** HTML5, CSS3, JavaScript
+
+The application uses JavaScript to manage task creation and update the interface in response to user actions. Event listeners connect the input and task controls to the application logic, while DOM manipulation is used to add tasks, mark items complete, remove individual tasks, and clear the full list.
+
+HTML provides the application structure, CSS handles the visual presentation and responsive layout, and JavaScript controls the interactive behavior and task state shown in the interface.
+
+## Optimizations
+
+Future iterations could add persistent storage so tasks remain available after a page refresh, strengthen accessibility and keyboard interactions, improve validation for empty or duplicate entries, and expand task organization features such as priorities, deadlines, or filtering.
+
+## Lessons Learned
+
+Building this project strengthened my understanding of event-driven JavaScript and DOM manipulation. I practiced creating and removing elements dynamically, responding to user input, updating interface state, and connecting multiple controls to a shared task workflow.
